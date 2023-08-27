@@ -1,6 +1,6 @@
 let initialAmount = 23000
 let monthlyAmount = 0
-let period = 2
+let period = 6
 let total = 0
 
 async function fetchSelicRate(){
@@ -13,11 +13,13 @@ async function fetchSelicRate(){
 }
 
 async function calcInvestiment(data){
+    fetchSelicRate()
+    
     const currentRate = Number(data[0].valor)
     const monthlyRate = (1 + currentRate / 100)**(1/12)-1
 
     for(let i=1; i <= period; i++){
-        let selicYield = (initialAmount * monthlyRate) 
-        initialAmount += selicYield
+        let selicYield = initialAmount * monthlyRate
+        total = initialAmount += selicYield
     }
 }
