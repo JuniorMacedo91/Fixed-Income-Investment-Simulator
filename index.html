@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <main id="main_container">
+
+        <div id="backgroung_image"></div>
+
+        <section class="slogan_container">
+
+            <h2 class="title_one"><span>Construa</span> o seu futuro</h2>
+            <h2 class="title_two">Defina o seu <span>destino</span></h2>
+            <p>Simulador de investimento em Renda Fixa</p>
+
+        </section>
+
+        <section class="form_container">
+            <h2 class="title_one"><span>Simule</span> agora</h2>
+
+            <form class="simulator_form">
+                <label >Valor inicial</label>
+                <input type="number" name="" id="initial_amount" placeholder="0.00">
+
+                <label >Valor mensal</label>
+                <input type="number" name="" id="monthly_amount" placeholder="0.00">
+
+                <label >Período</label>
+                <input type="number" name="" id="period" min="1">
+
+                <button type="button" id="caculate">Calcular</button>
+            </form>
+
+            <div class="display_result">
+
+                <div id="invest-net-total ">
+                    <p>Em 2 anos irá render:</p>
+                    <p>R$ 25.000,00</p>
+                </div>
+    
+                <p id="amount-invested">Valor investido:</p>
+                <p id="gross-total-amount">Valor bruto</p>
+                <p id="invest-interest-gain">Valor em juros:</p>
+                <p id="income-tax">Imposto de renda sobre rentabilidade</p>
+                <p id="invest-value">Valor pago em imposto de renda</p>
+                <p id="selic-rate">Rentabilidade: 13.15 a.a</p>
+                
+                <p>*Os resultados dessa calculadora são simulações. Podendo assim,sofrer divergências causadas por mudanças nas regulamentações e taxas. Esta página tem caráter informativo, sem valor legal.Portanto, não dispensa a consulta de um profissional da área.</p>
+
+            </div>
+        </section>
+
+    </main>
+    
+
+</body>
+</html>
