@@ -1,0 +1,65 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+ }
+
+ :root{
+    --orange: #FF5900;
+    --dark-green: #06161B;
+    --light-gray: #3F3F3F;
+    --off-white: #D9D9D9;
+ }
+
+ span, input{
+    color: var(--orange);
+    border: none;
+}
+
+ #main_container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 70% auto;
+    background-color: var(--dark-green);
+ }
+
+.slogan_container{
+    width: 100%;
+    height: 100vh;
+    padding: 4.5rem;
+    
+    color: var(--off-white);
+    background: url(/assets/grafic.png) no-repeat right -30px bottom;
+    background-size: 45vw;
+}
+
+.titles{
+    font: 3.3rem 'Poppins';
+}
+
+.titles > h2{
+    font-weight: 300;
+}
+
+.title_one, input, 
+.invest_net_total,
+.title_one span{
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+.titles p{
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+.form_container{
+    background-color: #ffffff;
+    color: var(--dark-green);
+}
+
